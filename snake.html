@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snake</title>
+    </head>
+    <body>
+        <canvas
+            id="snake_canvas"
+            width="900"
+            height="525"
+            style="border: navy 14.5px solid; background: #d1fa02"
+        ></canvas>
+        <div id="restart_button">
+            <div style="font-size: 20; margin-left: 415; margin-top: 5">
+                <b>Game Over! </b><br />
+                <b id="game_message"></b>
+            </div>
+            <button
+                onclick="start()"
+                style="
+                    background-color: rgb(13, 82, 98);
+                    color: white;
+                    font-size: 20;
+                    width: 80;
+                    height: 30;
+                    margin-left: 435;
+                    margin-top: 15;
+                "
+            >
+                Restart
+            </button>
+        </div>
+        <script src="snake.js"></script>
+    </body>
+</html>
